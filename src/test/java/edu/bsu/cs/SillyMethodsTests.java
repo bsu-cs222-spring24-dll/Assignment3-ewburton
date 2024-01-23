@@ -11,21 +11,21 @@ public class SillyMethodsTests {
         Assertions.assertTrue(answer);
     }
     @Test
-    public void testDidGuess45InCorrectly() {
+    public void testDidGuess33InCorrectly() {
         SillyMethods sillyMethods = new SillyMethods();
-        boolean answer = sillyMethods.didGuess33(33);
+        boolean answer = sillyMethods.didGuess33(23);
         Assertions.assertFalse(answer);
     }
     @Test
     public void testCountTo9() {
         SillyMethods sillyMethods = new SillyMethods();
-        boolean answer = sillyMethods.countTo(9);
+        String answer = sillyMethods.countTo(9);
         Assertions.assertEquals("0 1 2 3 4 5 6 7 8 9", answer);
     }
     @Test
     public void testCountTo11() {
         SillyMethods sillyMethods = new SillyMethods();
-        boolean answer = sillyMethods.countTo(11);
+        String answer = sillyMethods.countTo(11);
         Assertions.assertEquals("0 1 2 3 4 5 6 7 8 9 10 11", answer);
     }
 
